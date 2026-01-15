@@ -112,7 +112,6 @@ where
 
     pub fn apply_transition(&self, from: usize, v: &T) -> HashSet<usize> {
         let start = self.apply_eps_transition(from);
-        println!("reachable from eps {:?}", start);
 
         let mut after_symbol = HashSet::new();
         for st in start {

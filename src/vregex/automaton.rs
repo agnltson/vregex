@@ -103,8 +103,6 @@ where
                 self.machine.apply_transition(*st, v)
             })
             .collect();
-        println!("read {:?}: {:?}", v, next_states);
-        println!("are on exit: {}", self.on_exit());
         self.current_states = next_states;
     }
 
@@ -115,8 +113,6 @@ where
                 self.machine.apply_eps_transition(*st)
             })
             .collect();
-        println!("read epsilon: {:?}", next_states);
-        println!("are on exit: {}", self.on_exit());
         self.current_states = next_states;
     }
 
