@@ -1,5 +1,5 @@
 # vregex
-A regular expression validator tool.
+A rust regular expression validator tool.
 
 ## Exemple
 
