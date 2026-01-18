@@ -1,7 +1,7 @@
 # vregex
 A rust regular expression validator tool.
 
-## Exemple
+## Example
 
 ```rust
 mod vregex;
